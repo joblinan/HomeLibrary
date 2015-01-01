@@ -1,0 +1,52 @@
+/* 
+	网站通用外部样式表
+**/
+
+/* */
+body {
+	font: 100% Geneva, Tahoma, Verdana, sans-serif;
+	background-color: #1C2011;
+	color: #A5B89A;
+}
+
+h1,
+h2 {
+	font-family: ;
+}
+
+h1 {
+	font: bold small-caps 2.1875em Geneva, Tahoma, Verdana, sans-serif;
+	color: #CD3F24;
+	/*margin-right: 20%;*/
+	/*line-height: 5;*/
+	/*padding-left: 10%;*/
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+a:link,
+a:visited {
+	color: #CD3F24;
+	text-decoration: none;
+}
+
+a:hover {
+	color: lime;
+	text-decoration: underline;
+}
+
+/* 页面内容整体居中 */
+.container {
+
+}
+
+/* page header */
+
+/* global navigation */
+
+/* page footer */
+footer {
+	font-size: 0.9375em;
+}
