@@ -6,24 +6,26 @@
 	<link rel="stylesheet" type="text/css" href="common/css/style.css">
 </head>
 <body>
-	<!-- 包含整个页面的容器 -->
+	<!-- ==== 包含整个页面的容器 ==== -->
 	<div class="container">
-		<!-- 页面主体内容，logo及登陆 -->
-		<main role="main">
-			<img src="img/login.jpg" width="540" height="388" alt="main page"/>
+		<!-- ==== 页面主体内容，logo及登陆 ==== -->
+		<main role="main" class="clearfix">
+			<img src="img/login.jpg" width="600" height="450" alt="main page"/>
 
 			<div class="login-info">
 				<h1>HOME LIBRARY</h1>
-				<p>Let BOOKS make us closer.</p>
-				username: <input />
-				password: <input />
-				<p><a href="homepage/register.html">Join Us!</a></p>
-				<button>login</button>
+				<p class="subtitle">Let <span>BOOKS</span> make us closer.</p>
+				<form>
+					<input name="username" type="email"/>
+					<input name="password" />
+					<a href="homepage/register.html">Join Us!</a>
+					<button>login</button>
+				</form>				
 			</div>
 		</main>
 		<!-- 结束主体内容 -->
 
-		<!-- 页脚 -->
+		<!-- ==== 页脚 ==== -->
 		<footer role="contentinfo">
 			<p><small>&copy;&nbsp;2015 HomeLibrary. All Rights Reserved.</small></p>
 			<address>Have a question or comment about the website? <a href="mailto:job_linan@163.com">Contact our web team</a>.</address>

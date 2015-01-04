@@ -2,10 +2,11 @@
 	网站通用外部样式表
 **/
 
-/* */
+/* GENERAL (APPLIED TO ELEMENTS)
+------------------------------------------ */
 body {
-	font: 100% Geneva, Tahoma, Verdana, sans-serif;
-	background-color: #1C2011;
+	font: 100% Geneva, Tahoma, Verdana, sans-serif;   /* 16px */
+	background-color: #59471D;
 	color: #A5B89A;
 }
 
@@ -15,17 +16,18 @@ h2 {
 }
 
 h1 {
-	font: bold small-caps 2.1875em Geneva, Tahoma, Verdana, sans-serif;
+	font: bold small-caps 3.125em Geneva, Tahoma, Verdana, sans-serif;  /* 50px/16px */
 	color: #CD3F24;
-	/*margin-right: 20%;*/
-	/*line-height: 5;*/
-	/*padding-left: 10%;*/
 }
 
 h2 {
 	font-size: 1.75em;
 }
 
+/*label {
+	display: block;
+}
+*/
 a:link,
 a:visited {
 	color: #CD3F24;
@@ -37,16 +39,79 @@ a:hover {
 	text-decoration: underline;
 }
 
-/* 页面内容整体居中 */
-.container {
+/* CONTAINERS
+------------------------------------------ */
+/* 在父元素上使用clearfix类清除浮动，解决其高度问题 */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
 
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.container {
+	box-sizing: border-box;
+	width: 90%;
+	/* 垂直居中 */
+	margin: 4.3em auto 0;   /* top: 68px/16px */
 }
 
 /* page header */
 
 /* global navigation */
 
+
+main {
+	background-color: #1C2011;
+}
+
+main img {
+	float: left;
+	/*margin-right: 5%;*/
+}
+
+.login-info {
+	margin-left: 50%;
+}
+
+.login-info h1 {
+	text-align: center;
+}
+
+.login-info .subtitle {
+	font-size: 1.375em;    /* 22px/16px */
+	margin-left: 50%;
+}
+
+.login-info form {
+	width: 50%;
+	margin-top: 3em;
+	margin-left: 6.5em;
+}
+
+.login-info input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 1.5em;
+}
+
+.login-info button,
+.login-info a {
+	display: inline-block;
+}
+
 /* page footer */
 footer {
-	font-size: 0.9375em;
+	font-size: 0.6875em;   /* 11px/16px */
+	color: #1C2011;
+	text-align: center;
+	margin-top: 4em;   /* 44px/11px */
 }
