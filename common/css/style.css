@@ -1,22 +1,28 @@
 /* 
 	网站通用外部样式表
 **/
+/* Web 字体 */
+@font-face {
+    font-family: 'blokletters_viltstifviltstift';
+    src: url('Blokletters-Viltstift-webfont.eot');
+    src: url('Blokletters-Viltstift-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Viltstift-webfont.woff') format('woff'),
+         url('Blokletters-Viltstift-webfont.ttf') format('truetype'),
+         url('Blokletters-Viltstift-webfont.svg#blokletters_viltstifviltstift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* GENERAL (APPLIED TO ELEMENTS)
 ------------------------------------------ */
 body {
-	font: 100% Geneva, Tahoma, Verdana, sans-serif;   /* 16px */
+	font: 100% 'blokletters_viltstifviltstift'， Geneva, Tahoma, Verdana, sans-serif;   /* 16px */
 	background-color: #59471D;
 	color: #A5B89A;
 }
 
-h1,
-h2 {
-	font-family: ;
-}
-
 h1 {
-	font: bold small-caps 3.125em Geneva, Tahoma, Verdana, sans-serif;  /* 50px/16px */
+	font-size: 3.5em;   /* 56px/16px */
 	color: #CD3F24;
 }
 
@@ -24,19 +30,14 @@ h2 {
 	font-size: 1.75em;
 }
 
-/*label {
-	display: block;
-}
-*/
 a:link,
 a:visited {
-	color: #CD3F24;
+	color: #A58E1A;
 	text-decoration: none;
 }
 
 a:hover {
-	color: lime;
-	text-decoration: underline;
+	/*color: #2B664F;*/
 }
 
 /* CONTAINERS
@@ -72,9 +73,10 @@ main {
 	background-color: #1C2011;
 }
 
+/* 响应式图像尺寸 */
 main img {
 	float: left;
-	/*margin-right: 5%;*/
+	max-width: 50%;
 }
 
 .login-info {
@@ -86,32 +88,37 @@ main img {
 }
 
 .login-info .subtitle {
-	font-size: 1.375em;    /* 22px/16px */
-	margin-left: 50%;
+	font-size: 1.25em;    /* 20px/16px */
+	margin-left: 33%;
+	position: relative;
+	top: -1em;            /* 16px */
 }
 
 .login-info form {
-	width: 50%;
-	margin-top: 3em;
-	margin-left: 6.5em;
+	width: 55%;
+	margin-top: 2em;    /* 32px/16px */
+	margin-left: 7em;   /* 112px/16px */
+	position: relative;
 }
 
 .login-info input {
 	display: block;
 	width: 100%;
-	height: 30px;
-	margin-bottom: 1.5em;
+	height: 2em;         /* 32px/16px */
+	margin-bottom: 1em;  /* 16px */   
 }
 
-.login-info button,
-.login-info a {
-	display: inline-block;
+.login-info button {
+	width: 30%;
+	height: 30px;
+	position: absolute;
+	right: 0;
 }
 
 /* page footer */
 footer {
-	font-size: 0.6875em;   /* 11px/16px */
+	font-size: .625em;   /* 10px/16px */
 	color: #1C2011;
 	text-align: center;
-	margin-top: 4em;   /* 44px/11px */
+	margin-top: 3em;     /* 30px/10px */
 }
