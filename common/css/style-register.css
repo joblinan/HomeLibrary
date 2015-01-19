@@ -1,0 +1,132 @@
+/* 
+	网站通用外部样式表
+**/
+/* Web字体，常规文本 */
+@font-face {
+    font-family: 'blokletters_viltstifviltstift';
+    src: url('Blokletters-Viltstift-webfont.eot');
+    src: url('Blokletters-Viltstift-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Viltstift-webfont.woff') format('woff'),
+         url('Blokletters-Viltstift-webfont.ttf') format('truetype'),
+         url('Blokletters-Viltstift-webfont.svg#blokletters_viltstifviltstift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ageregular';
+    src: url('age-webfont.eot');
+    src: url('age-webfont.eot?#iefix') format('embedded-opentype'),
+         url('age-webfont.woff2') format('woff2'),
+         url('age-webfont.woff') format('woff'),
+         url('age-webfont.ttf') format('truetype'),
+         url('age-webfont.svg#ageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GENERAL (APPLIED TO ELEMENTS)
+------------------------------------------ */
+body {
+	font: 100% 'blokletters_viltstifviltstift'， Geneva, Tahoma, Verdana, sans-serif;   /* 16px */
+	background-color: #1C2011;
+	color: /*#A5B89A*/ #D79A5B;
+}
+
+h1 {
+	/*font-size: 3.5em;*/   /* 56px/16px */
+	/*color: #CD3F24;*/
+}
+
+h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+	color: #A58E1A;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: dotted;
+}
+
+input,
+select {
+	font-family: inherit;
+	font-size: .7em;
+}
+
+label {
+	display: inline-block;
+	width: 180px;
+	text-align: right;
+	padding: 0 6px;
+	vertical-align: top;
+}
+
+/* CONTAINERS
+------------------------------------------ */
+.container {
+	box-sizing: border-box;
+	width: 75%;
+	/* 垂直居中 */
+	margin: 0 auto;
+}
+
+/* page header */
+.logo {
+	width: 220px;
+	margin: 0;
+	font: 32px 'ageregular', sans-serif;
+}
+
+.logo a,
+.logo a:hover {
+	text-decoration: none;
+	display: inline-block;
+	padding: .3em;
+	color: #CD3F24;
+	border: none;
+}
+
+header img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+/* global navigation */
+
+
+/* main */
+form {
+	max-width: 80%;
+	margin: 1.5em auto 4em;
+}
+
+fieldset {
+	/*border: none;*/
+	margin-bottom: 12px;
+	padding: 0 .625em;
+}
+
+.btn {
+	background-color: #da820a;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px #333;
+	color: #fff;
+	margin: 12px 0 0 26px;
+	padding: 8px;
+	text-shadow: 1px 1px 0px #777;
+}
+
+/* page footer */
+footer {
+	font-size: .625em;   /* 10px/16px */
+	text-align: center;
+	margin-top: 3em;     /* 30px/10px */
+	color: #8B5928;
+}

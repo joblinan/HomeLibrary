@@ -2,32 +2,75 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Register · HomeLibrary</title>
+	<title>Welcome · HomeLibrary</title>
+	<link rel="stylesheet" type="text/css" href="../common/css/style-register.css">
 </head>
 <body>
-	<!-- 包含整个页面的容器，便于设计页面背景 -->
+	<!-- ==== 包含整个页面的容器 ==== -->
 	<div class="container">
-		<!-- 页面横幅 -->
+		<!-- ==== 页面横幅 ==== -->
 		<header role="banner">
-			<img src="" width="80%" height="120" alt="pattern" />
+			<p class="logo"><a href="">HomeLibrary</a></p>
+			<img src="../img/pattern-banner.jpg" alt="pattern" />
 		</header>
 		<!-- 结束横幅 -->
 
-		<!-- 页面主体内容，个人信息注册 -->
+		<!-- ==== 页面主体内容，个人信息注册 ==== -->
 		<main role="main">
-			<h1>Join Home Library!</h1>
-			<h3>Let BOOKS make us closer!</h3>
-			username:<input />
-			emailadd:<input />
-			password:<input />
-			confirm your password:<input />
-			phone number:<input />
-			address:<input />
-			<button>create an account</button>
+			<form method="post" action="add-member.php">
+				<fieldset>
+					<h2>Account</h2>
+					<div class="fields">
+						<p class="row">
+							<label for="username">username</label>
+							<input type="text" id="username" name="username" required autofocus />							
+						</p>
+						<p class="row">
+							<label for="email">email</label>
+							<input type="email" id="email" name="email" required placeholder="yourname@example.com" />
+						</p>
+						<p class="row">
+							<label for="password">password</label>
+							<input type="password" id="password" name="password" required />
+						</p>
+						<p class="row">
+							<label for="password2">confirm password</label>
+							<input type="password" id="password2" name="password2" required />
+						</p>
+					</div>
+				</fieldset>				
+				<fieldset>
+					<h2>Address</h2>
+					<div class="fields">
+						<p class="row">
+							<label for="city">city</label>
+							<select id="city" name="city" >
+								<option value="beijing">Beijing</option>
+							</select>
+							<label for="district">district</label>
+							<select id="district" name="district">
+								<option value="dongcheng">DongCheng</option>
+								<option value="xicheng">XiCheng</option>
+								<option value="haidian">HanDian</option>
+								<option value="chaoyang">ChaoYang</option>
+							</select>
+						</p>
+						<p class="row">
+							<label for="street">street</label>
+							<input type="text" id="street" name="street" />
+						</p>
+						<p class="row">
+							<label for="phone">phone</label>
+							<input type="tel" id="phone" name="phone" placeholder="xxx-xxxx-xxxx" pattern="\d{3}-\d{4}-\d{4}" />
+						</p>
+					</div>
+				</fieldset>
+				<input type="submit" value="create an account" class="btn" />
+			</form>			
 		</main>
 		<!-- 结束主体内容 -->
 
-		<!-- 页脚 -->
+		<!-- ==== 页脚 ==== -->
 		<footer role="contentinfo">
 			<p><small>&copy;&nbsp;2015 HomeLibrary. All Rights Reserved.</small></p>
 			<address>Have a question or comment about the website? <a href="mailto:job_linan@163.com">Contact our web team</a>.</address>
