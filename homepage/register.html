@@ -19,7 +19,7 @@
 		<main role="main">
 			<form method="post" action="add-member.php">
 				<fieldset>
-					<h2>Account</h2>
+					<h2>Account<sup>*</sup></h2>
 					<div class="fields">
 						<p class="row">
 							<label for="username">username</label>
@@ -45,10 +45,12 @@
 						<p class="row">
 							<label for="city">city</label>
 							<select id="city" name="city" >
+								<option value="none">none</option>
 								<option value="beijing">Beijing</option>
 							</select>
 							<label for="district">district</label>
 							<select id="district" name="district">
+								<option value="none">none</option>
 								<option value="dongcheng">DongCheng</option>
 								<option value="xicheng">XiCheng</option>
 								<option value="haidian">HanDian</option>
@@ -60,12 +62,12 @@
 							<input type="text" id="street" name="street" />
 						</p>
 						<p class="row">
-							<label for="phone">phone</label>
+							<label for="phone">phone number</label>
 							<input type="tel" id="phone" name="phone" placeholder="xxx-xxxx-xxxx" pattern="\d{3}-\d{4}-\d{4}" />
 						</p>
 					</div>
 				</fieldset>
-				<input type="submit" value="create an account" class="btn" />
+				<button type="submit" class="btn">create an account</button>
 			</form>			
 		</main>
 		<!-- 结束主体内容 -->

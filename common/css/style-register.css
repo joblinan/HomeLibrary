@@ -39,6 +39,15 @@ h1 {
 }
 
 h2 {
+	background-color: #dedede;
+	border-bottom: 1px solid #d4d4d4;
+	border-top: 1px solid #d4d4d4;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #ccc;
+	color: #fff;
+	/*margin: 12px;*/
+	padding: 0.3em 1em;
+	text-shadow: #9fbeb9 1px 1px 1px;
 	font-size: 1em;
 	text-transform: uppercase;
 }
@@ -54,17 +63,35 @@ a:hover {
 }
 
 input,
-select {
+select,
+button {
 	font-family: inherit;
 	font-size: .7em;
 }
 
+input {
+	width: 250px;
+	height: 25px;
+	border-radius: 2px;
+}
+
+select {
+	width: 150px;
+	height: 25px;
+	border-radius: 2px;
+}
+
 label {
+	font-size: .9em;
 	display: inline-block;
 	width: 180px;
 	text-align: right;
 	padding: 0 6px;
-	vertical-align: top;
+	vertical-align: center;
+}
+
+sup {
+	color: #CD3F24;
 }
 
 /* CONTAINERS
@@ -103,13 +130,33 @@ header img {
 /* main */
 form {
 	max-width: 80%;
-	margin: 1.5em auto 4em;
+	margin: .5em auto 4em;
 }
 
 fieldset {
-	/*border: none;*/
+	background-color: #f1f1f1;
+	border: none;
+	border-radius: 2px;
 	margin-bottom: 12px;
 	padding: 0 .625em;
+	overflow: hidden;
+}
+
+.fields {
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	margin: .75em;
+	padding: .75em;
+}
+
+.fields,
+.row {
+	margin: 0.5em 0;
+}
+
+input[type="email"]:invalid,
+input[type="tel"]:invalid {
+	color: #CD3F24;
 }
 
 .btn {
