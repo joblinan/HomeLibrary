@@ -1,0 +1,162 @@
+/* 
+	网站通用外部样式表
+**/
+/* Web字体，常规文本 */
+@font-face {
+    font-family: 'blokletters_viltstifviltstift';
+    src: url('Blokletters-Viltstift-webfont.eot');
+    src: url('Blokletters-Viltstift-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Viltstift-webfont.woff') format('woff'),
+         url('Blokletters-Viltstift-webfont.ttf') format('truetype'),
+         url('Blokletters-Viltstift-webfont.svg#blokletters_viltstifviltstift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ageregular';
+    src: url('age-webfont.eot');
+    src: url('age-webfont.eot?#iefix') format('embedded-opentype'),
+         url('age-webfont.woff2') format('woff2'),
+         url('age-webfont.woff') format('woff'),
+         url('age-webfont.ttf') format('truetype'),
+         url('age-webfont.svg#ageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GENERAL (APPLIED TO ELEMENTS)
+------------------------------------------ */
+body {
+	font: 100% 'blokletters_viltstifviltstift'， Geneva, Tahoma, Verdana, sans-serif;   /* 16px */
+	background-color: #1C2011;
+	color: #D79A5B;
+}
+
+a:link,
+a:visited {
+	color: #A58E1A;
+	text-decoration: none;
+}
+
+a:hover {
+	/*color: #2B664F;*/
+	border-bottom: dotted;
+}
+
+/* CONTAINERS
+------------------------------------------ */
+.container {
+	box-sizing: border-box;
+	width: 75%;
+	/* 垂直居中 */
+	margin: 0 auto;
+}
+
+/* page header */
+header {
+	position: relative;
+}
+
+.logo {
+	width: 220px;
+	margin: 0;
+	font: 32px 'ageregular', sans-serif;
+}
+
+.logo a,
+.logo a:hover {
+	text-decoration: none;
+	display: inline-block;
+	padding: .3em;
+	color: #CD3F24;
+	border: none;
+}
+
+header .basic {
+	position: absolute;
+	right: 0;
+	top: .7em;
+}
+
+header .basic-info {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+header img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+header input[type="search"] {
+	position: absolute;
+	width: 250px;
+	height: 25px;
+	border-radius: 4px;
+	right: 2em;
+	bottom: 1em;
+}
+
+/* navigation */
+.nav,
+.nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	min-height: 1.3em;
+ 	overflow: auto;
+	border-top: 5px solid #da820a;
+	border-bottom: 1px solid #da820a;
+}
+
+.nav a {
+	color: #da820a;
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+	padding: .5em 0;
+}
+
+.nav li {
+	float: left; 				
+	width: 13em;
+	text-align: center;
+}
+
+.nav li a:hover {
+	background: #da820a;
+	color: #A5B89A;
+	border: none;
+}
+
+.nav .subnav {
+	position: absolute;
+	left: -999em; /* hide a subnav offscreen by default so visitors don't see it */
+	z-index: 1000;
+	border-radius: 0 0 8px 8px;
+}
+
+.nav li:hover .subnav {
+	display: block; /* for older versions of IE */
+	left: auto; /* show the subnav when user hovers over the parent li */
+	width: 13em;
+}
+
+.nav .subnav li {
+	float: none;
+	font-size: .875em;
+	width: auto;
+}
+
+
+/* page footer */
+footer {
+	font-size: .625em;
+	text-align: center;
+	margin-top: 3em;
+	color: #8B5928;
+}
