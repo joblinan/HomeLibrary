@@ -44,6 +44,10 @@ a:hover {
 	border-bottom: dotted;
 }
 
+h3 {
+	margin-top: 2em;
+}
+
 /* CONTAINERS
 ------------------------------------------ */
 .container {
@@ -122,6 +126,11 @@ header input[type="search"] {
 	float: left; 				
 	width: 9em;
 	text-align: left;
+	border-left: 2px solid #1C2011;
+}
+
+.nav li:first-child {
+	border-left: none;
 }
 
 .nav .subnav {
@@ -154,12 +163,16 @@ nav .nav li {
 	text-align: center;
 }
 
-nav .nav li a:hover {
+nav .nav li a:hover,
+nav .nav>li .current-page {
 	background: #da820a;
 	color: #A5B89A;
-	border: none;
 }
 
+/* main */
+main {
+	padding: 1.5em 5em;
+}
 
 /* page footer */
 footer {
