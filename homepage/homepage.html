@@ -12,12 +12,26 @@
 		<header role="banner">
 			<p class="logo"><a href="">HomeLibrary</a></p>
 			<div class="basic">
-				<div class="basic-info">welcome! <time datetime="2014-12-20">Dec 20, 2014</time></div>
-				<div class="basic-info">user-name</div>
-				<div class="basic-info">notification</div>
+				<ul class="nav">
+					<li>welcome!</li>
+					<li>user-name
+						<ul class="subnav">
+							<li><a href="">basic info</a></li>
+							<li><a href="">friends management</a></li>
+						</ul>
+					</li>
+					<li>notification
+						<ul class="subnav">
+							<li><a href="">no 1</a></li>
+							<li><a href="">no 2</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 			<img src="../img/pattern-banner.jpg" alt="banner" />
-			<input type="search" id="search-books" name="search-books" />
+			<form method="get" action="search-books.php">
+				<input type="search" id="search-books" name="search-books" placeholder="books or authors" />
+			</form>
 		</header>
 		<!-- 结束横幅 -->
 

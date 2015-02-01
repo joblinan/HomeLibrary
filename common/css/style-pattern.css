@@ -75,13 +75,10 @@ header {
 
 header .basic {
 	position: absolute;
-	right: 0;
-	top: .7em;
-}
-
-header .basic-info {
-	display: inline-block;
-	margin-right: 2em;
+	right: 2em;
+	top: 1em;
+	color: #da820a;
+	font-size: .875em;
 }
 
 header img {
@@ -96,6 +93,7 @@ header input[type="search"] {
 	border-radius: 4px;
 	right: 2em;
 	bottom: 1em;
+	-webkit-appearance: none;
 }
 
 /* navigation */
@@ -109,8 +107,6 @@ header input[type="search"] {
 .nav {
 	min-height: 1.3em;
  	overflow: auto;
-	border-top: 5px solid #da820a;
-	border-bottom: 1px solid #da820a;
 }
 
 .nav a {
@@ -119,18 +115,13 @@ header input[type="search"] {
 	font-weight: bold;
 	text-decoration: none;
 	padding: .5em 0;
+	border: none;
 }
 
 .nav li {
 	float: left; 				
-	width: 13em;
-	text-align: center;
-}
-
-.nav li a:hover {
-	background: #da820a;
-	color: #A5B89A;
-	border: none;
+	width: 9em;
+	text-align: left;
 }
 
 .nav .subnav {
@@ -150,6 +141,23 @@ header input[type="search"] {
 	float: none;
 	font-size: .875em;
 	width: auto;
+}
+
+/* 主导航特殊样式 */
+nav .nav {
+	border-top: 5px solid #da820a;
+	border-bottom: 1px solid #da820a;
+}
+
+nav .nav li {
+	width: 13em;
+	text-align: center;
+}
+
+nav .nav li a:hover {
+	background: #da820a;
+	color: #A5B89A;
+	border: none;
 }
 
 
